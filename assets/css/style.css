@@ -120,10 +120,17 @@ button {
 #city-info {
     border: 2px solid black;
     margin: 10px;
+    background-color: rgb(37, 45, 60);
+    color: white
 }
 
 .current-city-weather {
     margin: 10px;
+    font-weight: bold;
+}
+
+#five-day-header {
+    border-bottom: 2px solid black;
 }
 
 #five-day-forecast {
@@ -140,7 +147,9 @@ button {
 .daily-forecast {
     border: 2px solid black;
     margin: 10px;
-    width: 20%
+    width: 20%;
+    background-color: rgb(70, 85, 113);
+    color: white;
 }
 
 footer {

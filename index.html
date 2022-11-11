@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Forecast</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="header-left">
+            <h1 id="weather-icons"><span id="sun-header">☀</span> <span id="cloud-header">☁</span> <span id="wind-header">༄</span> <span id="rain-header">🌦</span></h1>
+        </div>
+
+        <div id="header-right">
+            <h1 id="heading">Accurate Weather Doppler 9 Million</h1>
+        </div>
+    </header>
+
+
+    <main>
+
+        <aside>
+
+            <section id="search-form">
+
+                <h2>
+                    Search For A City:
+                </h2>
+
+                <form>
+
+                    <input placeholder="i.e. San Francisco">
+
+                    </input>
+
+                    <button id="search-btn">
+                        Search
+                    </button>
+
+                </form>
+
+            </section>
+
+            <section id="recent-searches">
+                <button class="recent-btn">New York</button>
+                <button class="recent-btn">Los Angelas</button>
+                <button class="recent-btn">Portland</button>
+                <button class="recent-btn">Atlanta</button>
+                <button class="recent-btn">Boston</button>
+                <button class="recent-btn">Miami</button>
+                <button class="recent-btn">Seattle</button>
+                <button class="recent-btn">New Orleans</button>
+            </section>
+
+        </aside>
+
+        <section id="weather-info">
+
+            <div id="city-info">
+                <h2>
+                    Citylandvile <span id="date"></span>
+                </h2>
+                <div id="current-icon" class="current-city-weather">
+                    ICON
+                </div>
+                <div class="current-city-weather">
+                    Temp: <span id="current-temp"></span>
+                </div>
+                <div class="current-city-weather">
+                    Wind: <span id="current-wind"></span>
+                </div>
+                <div class="current-city-weather">
+                    Humidity: <span id="current-humidity"></span>
+                </div>
+            </div>
+
+            <div id="five-day-forecast">
+                <div id="day-1" class = "daily-forecast">
+                    <h3 id="day-1-date" class="forecast-style"></h3>
+                    <div id="icon-1" class="forecast-style">ICON</div>
+                    <h4 id="day-1-temp" class="forecast-style">Temp: </h4>
+                    <h4 id="day-1-wind" class="forecast-style">Wind: </h4>
+                    <h4 id="day-1-humidity" class="forecast-style">Humidity: </h4>
+                </div>
+                <div id="day-2" class = "daily-forecast">
+                    <h3 id="day-2-date" class="forecast-style"></h3>
+                    <div id="icon-1" class="forecast-style">ICON</div>
+                    <h4 id="day-2-temp" class="forecast-style">Temp: </h4>
+                    <h4 id="day-2-wind" class="forecast-style">Wind: </h4>
+                    <h4 id="day-2-humidity" class="forecast-style">Humidity: </h4>
+                </div>
+                <div id="day-3" class = "daily-forecast">
+                    <h3 id="day-3-date" class="forecast-style"></h3>
+                    <div id="icon-1" class="forecast-style">ICON</div>
+                    <h4 id="day-3-temp" class="forecast-style">Temp: </h4>
+                    <h4 id="day-3-wind" class="forecast-style">Wind: </h4>
+                    <h4 id="day-3-humidity" class="forecast-style">Humidity: </h4>
+                </div>
+                <div id="day-4" class = "daily-forecast">
+                    <h3 id="day-4-date" class="forecast-style"></h3>
+                    <div id="icon-1" class="forecast-style">ICON</div>
+                    <h4 id="day-4-temp" class="forecast-style">Temp: </h4>
+                    <h4 id="day-4-wind" class="forecast-style">Wind: </h4>
+                    <h4 id="day-4-humidity" class="forecast-style">Humidity: </h4>
+                </div>
+                <div id="day-5" class = "daily-forecast">
+                    <h3 id="day-5-date" class="forecast-style"></h3>
+                    <div id="icon-1" class="forecast-style">ICON</div>
+                    <h4 id="day-5-temp" class="forecast-style">Temp: </h4>
+                    <h4 id="day-5-wind" class="forecast-style">Wind: </h4>
+                    <h4 id="day-5-humidity" class="forecast-style">Humidity: </h4>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h7>Made with ❤️️ by Howard Van Salisbury</h7>
+        <h7>&copy; 2022 Van Salisbury, Inc.</h7>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
+    <script src="assets/js/script.js"></script>
+</body>

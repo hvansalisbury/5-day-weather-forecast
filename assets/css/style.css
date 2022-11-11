@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(252, 241, 221);
 }
 
 header {
@@ -63,14 +64,12 @@ h1 {
 
 main {
     display: flex;
-    background-color: blue;
     width: 95vw;
 }
 
 aside {
     display: flex;
     flex-direction: column;
-    background-color: green;
     width: 20%;
 }
 
@@ -109,7 +108,7 @@ button {
 }
 
 .recent-btn {
-    background-color: lightgreen;
+    background-color:rgb(164, 226, 246)
 }
 
 #weather-info {
@@ -148,5 +147,4 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: blueviolet;
-}
+ }

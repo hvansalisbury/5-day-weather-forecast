@@ -216,7 +216,7 @@ function fiveDayApi(fiveDayUrl) {
         dayHumidity1 = data.list[4].main.humidity;
         dayWeatherDesc1 = data.list[4].weather[0].description;
         dayweatherIcon1 = data.list[4].weather[0].icon;
-        iconUrl1 = 'http://openweathermap.org/img/wn/' + dayweatherIcon1 + '@2x.png';
+        iconUrl1 = 'https://openweathermap.org/img/wn/' + dayweatherIcon1 + '@2x.png';
         dayWindDeg1 = data.list[4].wind.deg;
         dayWindSpeed1 = data.list[4].wind.speed
 
@@ -224,7 +224,7 @@ function fiveDayApi(fiveDayUrl) {
         dayHumidity2 = data.list[12].main.humidity;
         dayWeatherDesc2 = data.list[12].weather[0].description;
         dayweatherIcon2 = data.list[12].weather[0].icon;
-        iconUrl2 = 'http://openweathermap.org/img/wn/' + dayweatherIcon2 + '@2x.png';
+        iconUrl2 = 'https://openweathermap.org/img/wn/' + dayweatherIcon2 + '@2x.png';
         dayWindDeg2 = data.list[12].wind.deg;
         dayWindSpeed2 = data.list[12].wind.speed
 
@@ -232,7 +232,7 @@ function fiveDayApi(fiveDayUrl) {
         dayHumidity3 = data.list[20].main.humidity;
         dayWeatherDesc3 = data.list[20].weather[0].description;
         dayweatherIcon3 = data.list[20].weather[0].icon;
-        iconUrl3 = 'http://openweathermap.org/img/wn/' + dayweatherIcon3 + '@2x.png';
+        iconUrl3 = 'https://openweathermap.org/img/wn/' + dayweatherIcon3 + '@2x.png';
         dayWindDeg3 = data.list[20].wind.deg;
         dayWindSpeed3 = data.list[20].wind.speed
 
@@ -240,7 +240,7 @@ function fiveDayApi(fiveDayUrl) {
         dayHumidity4 = data.list[28].main.humidity;
         dayWeatherDesc4 = data.list[28].weather[0].description;
         dayweatherIcon4 = data.list[28].weather[0].icon;
-        iconUrl4 = 'http://openweathermap.org/img/wn/' + dayweatherIcon4 + '@2x.png';
+        iconUrl4 = 'https://openweathermap.org/img/wn/' + dayweatherIcon4 + '@2x.png';
         dayWindDeg4 = data.list[28].wind.deg;
         dayWindSpeed4 = data.list[28].wind.speed
 
@@ -248,7 +248,7 @@ function fiveDayApi(fiveDayUrl) {
         dayHumidity5 = data.list[36].main.humidity;
         dayWeatherDesc5 = data.list[36].weather[0].description;
         dayweatherIcon5 = data.list[36].weather[0].icon;
-        iconUrl5 = 'http://openweathermap.org/img/wn/' + dayweatherIcon5 + '@2x.png';
+        iconUrl5 = 'https://openweathermap.org/img/wn/' + dayweatherIcon5 + '@2x.png';
         dayWindDeg5 = data.list[36].wind.deg;
         dayWindSpeed5 = data.list[36].wind.speed;
 
@@ -311,7 +311,7 @@ function currentWeather(currentUrl) {
         currHumidity = data.main.humidity;
         currDescription = data.weather[0].description;
         currIcon = data.weather[0].icon;
-        currIconUrl = 'http://openweathermap.org/img/wn/' + currIcon + '@2x.png';
+        currIconUrl = 'https://openweathermap.org/img/wn/' + currIcon + '@2x.png';
         currWindDeg = data.wind.deg;
         currWindSpeed = data.wind.speed;
 
@@ -365,7 +365,7 @@ function init() {
 }
 
 searchBtn.addEventListener('click', function (event) {
-  geoUrl = 'http://api.openweathermap.org/geo/1.0/direct?q=' + userInput.value.trim() + '&limit=1&units=imperial&appid=' + apiKey;
+  geoUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + userInput.value.trim() + '&limit=1&units=imperial&appid=' + apiKey;
 
   geoApi(geoUrl);
   event.preventDefault();
@@ -378,7 +378,7 @@ recentSearches.addEventListener("click", function (event) {
     console.log(userInput.value)
     userInput.value = element.textContent;
 
-    geoUrl = 'http://api.openweathermap.org/geo/1.0/direct?q=' + userInput.value.trim() + '&limit=1&units=imperial&appid=' + apiKey;
+    geoUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + userInput.value.trim() + '&limit=1&units=imperial&appid=' + apiKey;
 
     geoApi(geoUrl);
     event.preventDefault();

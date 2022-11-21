@@ -11,7 +11,8 @@
 <body>
     <header>
         <div id="header-left">
-            <h1 id="weather-icons"><span id="sun-header">☀</span> <span id="cloud-header">☁</span> <span id="wind-header">༄</span> <span id="rain-header">🌦</span></h1>
+            <h1 id="weather-icons"><span id="sun-header">☀</span> <span id="cloud-header">☁</span> <span
+                    id="wind-header">༄</span> <span id="rain-header">🌦</span></h1>
         </div>
 
         <div id="header-right">
@@ -20,9 +21,9 @@
     </header>
 
 
-    <main> 
+    <main id="main-container">
 
-        <aside>
+        <aside id="aside-container" class="width40">
 
             <section id="search-form">
 
@@ -45,75 +46,78 @@
             </section>
 
             <section id="recent-searches">
-                <button class="recent-btn">New York</button>
-                <button class="recent-btn">Los Angeles</button>
-                <button class="recent-btn">Portland</button>
-                <button class="recent-btn">Atlanta</button>
-                <button class="recent-btn">Boston</button>
-                <button class="recent-btn">Miami</button>
-                <button class="recent-btn">Seattle</button>
-                <button class="recent-btn">New Orleans</button>
             </section>
 
         </aside>
 
-        <section id="weather-info">
+        <section class="weather-info hidden">
 
             <div id="city-info">
-                <h2>
+                <h2 id="date"></h2>
+                <h2 id="city-name">
                     Citylandvile <span id="date"></span>
                 </h2>
-                <div id="current-icon" class="current-city-weather">
-                    ICON
+                <img id="current-icon" class="current-city-weather">
+                </img>
+                <div class="current-city-weather">
+                    <span id="current-description"></span>
                 </div>
                 <div class="current-city-weather">
-                    Temp: <span id="current-temp"></span>
+                    High Temp: <span id="current-temp-max"></span>° F
                 </div>
                 <div class="current-city-weather">
-                    Wind: <span id="current-wind"></span>
+                    Low Temp: <span id="current-temp-min"></span>° F
                 </div>
                 <div class="current-city-weather">
-                    Humidity: <span id="current-humidity"></span>
+                    Wind: <span id="current-wind"></span> mph
+                </div>
+                <div class="current-city-weather">
+                    Humidity: <span id="current-humidity"></span> %
                 </div>
             </div>
 
             <h2 id="five-day-header">Five Day Forecast</h2>
 
             <div id="five-day-forecast">
-                <div id="day-1" class = "daily-forecast">
+                <div id="day-1" class="daily-forecast">
                     <h3 id="day-1-date" class="forecast-style"></h3>
-                    <div id="icon-1" class="forecast-style">ICON</div>
-                    <h4 id="day-1-temp" class="forecast-style">Temp: </h4>
-                    <h4 id="day-1-wind" class="forecast-style">Wind: </h4>
-                    <h4 id="day-1-humidity" class="forecast-style">Humidity: </h4>
+                    <img id="icon-1" class="forecast-style"></img>
+                    <h4 id="day-1-desc" class="forecast-style"></h4>
+                    <h4 class="forecast-style">Temp: <span id="day-1-temp"></span></h4>
+                    <h4 class="forecast-style">Wind: <span id="day-1-wind"></span></h4>
+                    <h4 class="forecast-style">Humidity: <span id="day-1-humidity"></span></h4>
                 </div>
-                <div id="day-2" class = "daily-forecast">
+                <div id="day-2" class="daily-forecast">
                     <h3 id="day-2-date" class="forecast-style"></h3>
-                    <div id="icon-1" class="forecast-style">ICON</div>
-                    <h4 id="day-2-temp" class="forecast-style">Temp: </h4>
-                    <h4 id="day-2-wind" class="forecast-style">Wind: </h4>
-                    <h4 id="day-2-humidity" class="forecast-style">Humidity: </h4>
+                    <img id="icon-2" class="forecast-style"></img>
+                    <h4 id="day-2-desc" class="forecast-style"></h4>
+                    <h4 class="forecast-style">Temp: <span id="day-2-temp"></span></h4>
+                    <h4 class="forecast-style">Wind: <span id="day-2-wind"></span></h4>
+                    <h4 class="forecast-style">Humidity: <span id="day-2-humidity"></span></h4>
                 </div>
-                <div id="day-3" class = "daily-forecast">
+                <div id="day-3" class="daily-forecast">
                     <h3 id="day-3-date" class="forecast-style"></h3>
-                    <div id="icon-1" class="forecast-style">ICON</div>
-                    <h4 id="day-3-temp" class="forecast-style">Temp: </h4>
-                    <h4 id="day-3-wind" class="forecast-style">Wind: </h4>
-                    <h4 id="day-3-humidity" class="forecast-style">Humidity: </h4>
+                    <img id="icon-3" class="forecast-style"></img>
+                    <h4 id="day-3-desc" class="forecast-style"></h4>
+                    <h4 class="forecast-style">Temp: <span id="day-3-temp"></span></h4>
+                    <h4 class="forecast-style">Wind: <span id="day-3-wind"></span></h4>
+                    <h4 class="forecast-style">Humidity: <span id="day-3-humidity"></span></h4>
                 </div>
-                <div id="day-4" class = "daily-forecast">
+                <div id="day-4" class="daily-forecast">
                     <h3 id="day-4-date" class="forecast-style"></h3>
-                    <div id="icon-1" class="forecast-style">ICON</div>
-                    <h4 id="day-4-temp" class="forecast-style">Temp: </h4>
-                    <h4 id="day-4-wind" class="forecast-style">Wind: </h4>
-                    <h4 id="day-4-humidity" class="forecast-style">Humidity: </h4>
+                    <img id="icon-4" class="forecast-style"></img>
+                    <h4 id="day-4-desc" class="forecast-style"></h4>
+                    <h4 class="forecast-style">Temp: <span id="day-4-temp"></span></h4>
+                    <h4 class="forecast-style">Wind: <span id="day-4-wind"></span></h4>
+                    <h4 class="forecast-style">Humidity: <span id="day-4-humidity"></span></h4>
                 </div>
-                <div id="day-5" class = "daily-forecast">
+                <div id="day-5" class="daily-forecast">
                     <h3 id="day-5-date" class="forecast-style"></h3>
-                    <div id="icon-1" class="forecast-style">ICON</div>
-                    <h4 id="day-5-temp" class="forecast-style">Temp: </h4>
-                    <h4 id="day-5-wind" class="forecast-style">Wind: </h4>
-                    <h4 id="day-5-humidity" class="forecast-style">Humidity: </h4>
+                    <img id="icon-5" class="forecast-style"></img>
+                    <h4 id="day-5-desc" class="forecast-style"></h4>
+                    <h4 class="forecast-style">Temp: <span id="day-5-temp"></span></h4>
+                    <h4 class="forecast-style">Wind: <span id="day-5-wind"></span></h4>
+                    <h4 class="forecast-style">Humidity: <span id="day-5-humidity"></span></h4>
                 </div>
             </div>
 

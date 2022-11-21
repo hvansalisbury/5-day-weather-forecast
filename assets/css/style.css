@@ -65,6 +65,8 @@ h1 {
 main {
     display: flex;
     width: 95vw;
+    justify-content: center;
+    min-height: 80vh;
 }
 
 aside {
@@ -83,7 +85,7 @@ form {
 }
 
 h2 {
-    margin: 10px;
+    margin: 0px 10px;
 }
 
 input {
@@ -111,10 +113,14 @@ button {
     background-color:rgb(164, 226, 246)
 }
 
-#weather-info {
+.weather-info {
     display: flex;
     flex-direction: column;
     width: 80%;
+}
+
+.hidden {
+    display: none;
 }
 
 #city-info {
@@ -125,7 +131,7 @@ button {
 }
 
 .current-city-weather {
-    margin: 10px;
+    margin: 0px 10px;
     font-weight: bold;
 }
 
@@ -138,10 +144,7 @@ button {
 }
 
 .forecast-style {
-    margin: 10px;
-}
-{-style
-
+    margin: 0px 10px;
 }
 
 .daily-forecast {
@@ -156,4 +159,119 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+ }
+
+ .width40 {
+    width: 40%;
+ }
+
+ @media screen and (max-width: 1172px) {
+    h2 {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    h4 {
+        font-size: .8em;
+    }
+ }
+ 
+ @media screen and (max-width: 996px) {
+    aside {
+        width: 33%;
+    }
+
+    .weather-info {
+        width: 66%;
+    }
+
+    #five-day-forecast {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    .daily-forecast {
+        width: 45%;
+    }
+
+    .current-city-weather {
+        font-size: 1.3em;
+    }
+ }
+
+ @media screen and (max-width: 787px) {
+    #header-left {
+        display: none;
+    }
+
+    #header-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: max-content;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    #heading {
+        padding-right: 0px;
+        text-align: center;
+        font-size: 1.6em;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: auto;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .width40 {
+        width: 100%;
+    }
+
+    .weather-info {
+        width: 100%;
+    }
+
+    #recent-searches {
+        display: none;
+    }
+
+    @media screen and (max-width: 510px) {
+        .daily-forecast {
+            width: 100%;
+        }
+    }
  }

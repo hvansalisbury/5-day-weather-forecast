@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- header contains title and weather icons -->
     <header>
         <div id="header-left">
             <h1 id="weather-icons"><span id="sun-header">☀</span> <span id="cloud-header">☁</span> <span
@@ -19,46 +20,28 @@
             <h1 id="heading">Accurate Weather Doppler 9 Million</h1>
         </div>
     </header>
-
-
+<!-- main container for the search column and weather data-->
     <main id="main-container">
-
+        <!-- contains search form, and recent buttons -->
         <aside id="aside-container" class="width40">
-
             <section id="search-form">
-
-                <h2>
-                    Search For A City:
-                </h2>
-
+                <h2>Search For A City:</h2>
                 <form>
-
-                    <input placeholder="i.e. San Francisco" id="user-input">
-
-                    </input>
-
-                    <button id="search-btn">
-                        Search
-                    </button>
-
+                    <input placeholder="i.e. San Francisco" id="user-input"></input>
+                    <button id="search-btn">Search</button>
                 </form>
-
             </section>
-
-            <section id="recent-searches">
-            </section>
-
+            <section id="recent-searches"></section>
         </aside>
-
+        <!-- contains all the weather for current day and 5 day weather -->
         <section class="weather-info hidden">
-
+            <!-- card for just current day weather -->
             <div id="city-info">
                 <h2 id="date"></h2>
                 <h2 id="city-name">
-                    Citylandvile <span id="date"></span>
+                    <span id="date"></span>
                 </h2>
-                <img id="current-icon" class="current-city-weather">
-                </img>
+                <img id="current-icon" class="current-city-weather"></img>
                 <div class="current-city-weather">
                     <span id="current-description"></span>
                 </div>
@@ -75,10 +58,11 @@
                     Humidity: <span id="current-humidity"></span> %
                 </div>
             </div>
-
+            <!-- header for five day forecast -->
             <h2 id="five-day-header">Five Day Forecast</h2>
-
+            <!-- card that contains each day's container -->
             <div id="five-day-forecast">
+                <!-- each of the day cards for the forecast-->
                 <div id="day-1" class="daily-forecast">
                     <h3 id="day-1-date" class="forecast-style"></h3>
                     <img id="icon-1" class="forecast-style"></img>
@@ -124,7 +108,7 @@
         </section>
 
     </main>
-
+    <!-- basic footer -->
     <footer>
         <h7>Made with ❤️️ by Howard Van Salisbury</h7>
         <h7>&copy; 2022 Van Salisbury, Inc.</h7>

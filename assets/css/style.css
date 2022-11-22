@@ -1,40 +1,41 @@
+/* universal selector for font type */
 * {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   }
-
+/* all body elements will populate vertically, in the center, and sets background color for page */
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(252, 241, 221);
 }
-
+/* sets background color gradient dark-light-dark, sets elements at opposite ends of header container, and 100% available width */
 header {
     display: flex;
     background-image: linear-gradient(to right, rgb(0, 0, 70), rgb(0, 0, 180), rgb(0, 0, 70));
     justify-content: space-between;
     width: 100%;
 }
-
+/* header element centered and wtih 5 pixel margin around */
 h1 {
     display: flex;
     align-items: center;
     margin: 5px;
 }
-
+/* left container of header for weather icons, vertically center, 5 pixel margin and only takes up 15% of the width */
 #header-left {
     display: flex;
     align-items: center;
     margin: 5px;
     width: 15%;
 }
-
+/* spacing for weather icons in header */
 #weather-icons {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
-
+/* color for header icons */
 #sun-header {
     color: yellow;
 }
@@ -50,48 +51,48 @@ h1 {
 #wind-header {
     color: whitesmoke;
 }
-
+/* sets text location and width of container  */
 #header-right {
     display: flex;
     justify-content: flex-end;
     width: 85%;
 }
-
+/* sets space on right side of header */
 #heading {
     padding-right: 10vh;
     color: white;
 }
-
+/* main section is 95% of viewport width, content is centered, and is at least 80% of the viewport height*/
 main {
     display: flex;
     width: 95vw;
     justify-content: center;
     min-height: 80vh;
 }
-
+/* aside stores the search form and search buttons, buttons are stacked verically, and the column is 20% of the main width */
 aside {
     display: flex;
     flex-direction: column;
     width: 20%;
 }
-
+/* border line under form that separates current search from recent searches */
 #search-form {
     border-bottom: solid 3px grey;
 }
-
+/* form is a column so input box is above search button */
 form {
     display: flex;
     flex-direction: column;
 }
-
+/* all the h3 elements have margin space on the sides and none vertically */
 h2 {
     margin: 0px 10px;
 }
-
+/* spacing around input */
 input {
     margin: 10px;
 }
-
+/* rounded buttons, padding around text, space around button, slightly larger font size, bolded */
 button {
     border-radius: 5px;
     padding: 5px;
@@ -99,54 +100,54 @@ button {
     font-size: 1.1em;
     font-weight: bold;
 }
-
+/* background color for search button */
 #search-btn {
     background-color:cornflowerblue;
 }
-
+/* container for search buttons is column */
 #recent-searches {
     display: flex;
     flex-direction: column;
 }
-
+/* background color for search results */
 .recent-btn {
     background-color:rgb(164, 226, 246)
 }
-
+/* container that holds all the weather display, is vertical and takes up 80% of width container */
 .weather-info {
     display: flex;
     flex-direction: column;
     width: 80%;
 }
-
+/* class that designates is an element is not shown on the screen to be removed after performing first search */
 .hidden {
     display: none;
 }
-
+/* card to hold all search city weather data, border, spacing around, backround and text color */
 #city-info {
     border: 2px solid black;
     margin: 10px;
     background-color: rgb(37, 45, 60);
     color: white
 }
-
+/* each value of the weather has side margins and bold */
 .current-city-weather {
     margin: 0px 10px;
     font-weight: bold;
 }
-
+/* header to show that there's a 5 day forecast underneath */
 #five-day-header {
     border-bottom: 2px solid black;
 }
-
+/* card that contains forecast for all 5 days and set to flexbox */
 #five-day-forecast {
     display: flex;
 }
-
+/* all forecast text has side margins but none on y axis */
 .forecast-style {
     margin: 0px 10px;
 }
-
+/* card for forecast for a single day, border, spacing around, 20% of container width, background and font color */
 .daily-forecast {
     border: 2px solid black;
     margin: 10px;
@@ -154,17 +155,17 @@ button {
     background-color: rgb(70, 85, 113);
     color: white;
 }
-
+/* sets footer to flexbox, vertical, and centered horizontally */
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
  }
-
+/* class to be removed after first search, width of aside is 40% before performing a search */
  .width40 {
     width: 40%;
  }
-
+/* first media query to allow for large but not very large screens to look ok, just shrinks font sizes down to prevent wrapping*/
  @media screen and (max-width: 1172px) {
     h2 {
         font-size: 1.2em;
@@ -182,7 +183,7 @@ footer {
         font-size: .8em;
     }
  }
- 
+ /* rearranges the page to have the aside be 1/3 of page instead of 1/5, the 5 days of the forecast now have 2 days per line and wraps, and spaces those days, and adjust font sizes accordingly  */
  @media screen and (max-width: 996px) {
     aside {
         width: 33%;
@@ -223,7 +224,7 @@ footer {
         font-size: 1.3em;
     }
  }
-
+/* media for smaller screens, removes weather icons from header, center header, resize fonts, and make the main column all vertical, and search column and weather card is 100% width, and recent search buttons are removed */
  @media screen and (max-width: 787px) {
     #header-left {
         display: none;
@@ -268,7 +269,7 @@ footer {
     #recent-searches {
         display: none;
     }
-
+    /* makes the forecast cards 1 per line and is vertical, formatted for mobile */
     @media screen and (max-width: 510px) {
         .daily-forecast {
             width: 100%;

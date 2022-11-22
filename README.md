@@ -33,12 +33,12 @@ The page is also designed to be responsive, so try it out on different screen si
 
 ## Screenshots
 
-![Presearch w-o history](./Assets/images/presearch-previous-1.png)
-![Presearch w history](./Assets/images/presearch-previous-2.png)
-![Search result](./Assets/images/search-result.png)
-![Responsive Resize 1](./Assets/images/responsive-resize1.png)
-![Responsive Resize 2](./Assets/images/responsive-resize2.png)
-![Responsive Resize 3](./Assets/images/responsive-resize3.png)
+![Presearch w-o history](./assets/images/presearch-previous-1.png)
+![Presearch w history](./assets/images/presearch-previous-2.png)
+![Search result](./assets/images/search-result.png)
+![Responsive Resize 1](./assets/images/responsive-resize1.png)
+![Responsive Resize 2](./assets/images/responsive-resize2.png)
+![Responsive Resize 3](./assets/images/responsive-resize3.png)
 
 ## Credits
 
